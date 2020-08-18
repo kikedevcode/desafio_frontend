@@ -1,0 +1,17 @@
+<div class="film-grid">
+    <ul class="film-list" *ngFor="let film of films; index as i">    
+        <li >{{'Titulo: '}} {{ film.title }}</li>
+        <li>{{'Episodio: '}} {{ film.episode_id }}</li>
+        <li>{{'Director: '}}{{ film.director }}</li>        
+        <li><button class="char-button" [routerLink]="['/characters', i + 1]">Characters</button></li>    
+    </ul>
+</div>
+
+
+<!-- <ag-grid-angular
+    style="width: 100%; height: 500px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    >
+</ag-grid-angular> -->

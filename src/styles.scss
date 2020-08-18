@@ -1,1 +1,112 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin.scss";
+
+.ag-theme-alpine {
+    @include ag-theme-alpine();
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.container{
+  /* border: 1px solid red; */
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+/* List styles */
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Button styles */
+.char-button {
+    display: block;
+    background: transparent;
+    color: black;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .character-list {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+    .character-list {
+      max-width: 600px;
+    }
+
+    ul {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+   .header {
+        display: block;
+        height: auto;        
+    }
+
+    ul {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+
+    .header ol {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    li {
+        margin: 0 auto;
+    }
+
+    .character-list {
+      max-width: 400px;
+    }
+  
+}
+
+@media screen and (max-width: 320px) {
+
+    li {
+        font-size: 1.5em;
+        padding: 8px 0;
+    }
+
+    link {
+        text-align: center;
+    }
+    .char-button {
+        margin: 0;
+        font-size: 1.2em;
+        width: 100%;        
+    }
+
+    .character-list {
+      max-width: 300px;
+    }
+}
