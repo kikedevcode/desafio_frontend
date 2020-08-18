@@ -60,9 +60,9 @@ ul {
 
 @media screen and (max-width: 480px) {
 
-   .header {
-        display: block;
-        height: auto;        
+   header {
+        display: block !important;
+        height: auto !important;        
     }
 
     ul {
@@ -76,12 +76,16 @@ ul {
     }
 
     .header ol {
-        margin: 0;
+        margin: 0 !important;
         padding: 10px 0;
     }
 
     li {
         margin: 0 auto;
+    }
+
+    a {
+      text-align: center !important;
     }
 
     .character-list {
@@ -97,9 +101,7 @@ ul {
         padding: 8px 0;
     }
 
-    link {
-        text-align: center;
-    }
+
     .char-button {
         margin: 0;
         font-size: 1.2em;
